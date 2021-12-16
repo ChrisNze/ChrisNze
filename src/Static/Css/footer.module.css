@@ -1,0 +1,143 @@
+.footer {
+	background-image: linear-gradient(to bottom, rgb(74, 0, 224), rgb(166, 102, 250));
+	padding: 15rem 0 0 0;
+	margin-top: -130px;
+	color: rgb(255, 255, 255);
+}
+
+.footer_heading_wrapper {
+	text-align: center;
+}
+
+.footer_heading_wrapper h2 {
+	width: 55%;
+	color: rgba(255, 255, 255, 0.8);
+}
+.footer_heading_wrapper h1 {
+	color: rgb(255, 255, 255);
+}
+
+.footer_content_wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 4rem;
+}
+
+.form_wrapper {
+	width: 40%;
+	padding: 2rem 2rem 0 0;
+}
+
+.form_wrapper h1 {
+	font-size: 2.5rem;
+	margin-bottom: 3rem;
+}
+
+.input_wrapper {
+	margin-bottom: 2rem;
+}
+.input_wrapper input {
+	display: block;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.5rem;
+	letter-spacing: 1.1px;
+	width: 100%;
+	padding: 1.5rem 2rem;
+	background-color: rgba(255, 255, 255, 0.25);
+	color: rgba(255, 255, 255);
+	transition: all 0.7s;
+	border-bottom: 2px solid transparent;
+}
+
+.input_wrapper label {
+	display: block;
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 1rem 0 0 2rem;
+	letter-spacing: 1.1px;
+	transition: all 0.5s;
+}
+
+.input:placeholder-shown + label {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-3.5rem);
+}
+
+.input_wrapper input::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.5rem;
+	letter-spacing: 1.1px;
+}
+
+.input_wrapper input:focus {
+	outline: none;
+	border-bottom: 2px solid rgba(74, 0, 224, 0.8);
+}
+
+.input_wrapper input:focus:invalid {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.form_wrapper button {
+	border: none;
+	display: inline-block;
+	font-size: 1.6rem;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 12px 32px;
+	border-radius: 100px;
+	color: rgb(64, 6, 180);
+	font-weight: 600;
+	transform: scale(1);
+	transition: transform 0.7s;
+}
+
+.form_wrapper button:hover {
+	background-image: linear-gradient(to right, rgb(74, 0, 224), rgb(166, 102, 250));
+	transform: scale(0.9);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.form_wrapper button:focus {
+	outline: none;
+}
+
+.about_wrapper,
+.mission_wrapper {
+	width: 40%;
+	padding: 2rem 2rem 5rem 3rem;
+}
+
+.about_wrapper h1,
+.mission_wrapper h1 {
+	font-size: 2.5rem;
+}
+
+.about_wrapper p span,
+.mission_wrapper p span {
+	display: block;
+	color: rgba(255, 255, 255, 0.8);
+}
+.about_wrapper p,
+.mission_wrapper p {
+	margin-top: 2rem;
+}
+
+.about_wrapper p span:last-child,
+.mission_wrapper p span:last-child {
+	margin-top: 2rem;
+}
+
+.copywrite {
+	margin-top: 5rem;
+	background-image: linear-gradient(to bottom, rgb(74, 0, 224), rgb(166, 102, 250));
+	padding: 2rem 0;
+}
+
+.copywrite p {
+	color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+}

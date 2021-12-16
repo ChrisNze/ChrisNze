@@ -1,0 +1,64 @@
+.navigation {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: rgba(236, 240, 243, 0.4);
+	backdrop-filter: blur(200px);
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 6rem 1rem 6rem;
+	border-bottom: 1px solid rgba(92, 88, 88, 0.089);
+}
+
+.navigation ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navigation li,
+.login {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+
+.navigation_link,
+.navigation_link:link,
+.navigation_link:visited {
+	background-image: none;
+}
+
+.navigation_link:hover {
+	color: rgb(255, 255, 255);
+	background-image: linear-gradient(to right, rgb(74, 0, 224), rgb(166, 102, 250));
+}
+
+.navigation_link:active {
+	color: violet;
+}
+
+.navigation h1 {
+	font-family: "Encode Sans", sans-serif;
+}
+
+.top {
+	background-image: linear-gradient(to right, rgb(74, 0, 224), rgba(166, 102, 250, 0.5));
+	width: 5rem;
+	height: 5rem;
+	border-radius: 100%;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.top .icon {
+	font-size: 2.2rem;
+	color: rgb(255, 255, 255);
+}
