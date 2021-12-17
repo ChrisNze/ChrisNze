@@ -71,6 +71,9 @@
 /* Media query */
 
 @media only all and (max-width: 1024px) {
+	.navigation {
+		padding: 2rem 2rem 1rem 2rem;
+	}
 	.mobile_navigation {
 		display: block;
 	}
