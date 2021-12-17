@@ -83,7 +83,7 @@
 	}
 }
 
-@media only all and (max-width: 900px) {
+@media only all and (max-width: 1024px) {
 	.mobile_navigation {
 		display: block;
 	}
