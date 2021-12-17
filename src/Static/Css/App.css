@@ -11,7 +11,7 @@ html {
 body {
 	font-family: "Roboto", sans-serif;
 	line-height: 1.7;
-	background-color: rgb(249, 251, 253);
+	/* background-color: rgb(249, 251, 253); */
 	box-sizing: border-box;
 	color: rgb(88, 85, 85);
 	width: 100%;

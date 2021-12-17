@@ -1,6 +1,7 @@
 .login_wrapper {
 	background-color: rgb(249, 251, 253);
 	padding: 10rem 0 20rem 8rem;
+	height: 100vh;
 }
 
 .container {

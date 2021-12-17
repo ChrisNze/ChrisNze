@@ -5,7 +5,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	/* background-color: rgb(249, 251, 253); */
+	background-color: rgb(249, 251, 253);
+
 	/* height: 100%; */
 	/* min-height: 100%; */
 }
@@ -177,7 +178,7 @@ Section 4 style */
 
 .section_testimony {
 	padding: 8rem 0 25rem 0;
-	/* background-color: rgb(249, 251, 253); */
+	background-color: #fff;
 }
 
 .testimony_container {
@@ -195,7 +196,7 @@ Section 4 style */
 }
 
 .testimony_wrapper {
-	/* background-color: rgba(236, 240, 243, 0.4); */
+	background-color: rgba(236, 240, 243, 0.4);
 	border-radius: 6px;
 	transition: transform 0.6s;
 	box-shadow: -10px 8px 10px rgb(236, 240, 243);
@@ -256,39 +257,7 @@ Section 4 style */
 	}
 }
 
-@media only all and (max-width: 1080px) {
-	.wrapper_text h1 {
-		font-size: 3.3rem;
-		font-weight: 700;
-	}
-}
-
-@media only all and (max-width: 900px) {
-	.content_wrapper {
-		padding: 6rem 0 6rem 0;
-	}
-
-	.wrapper_text h1 {
-		font-size: 3.2rem;
-	}
-
-	.link_wrapper {
-		margin-top: 4rem;
-	}
-
-	.image_wrapper {
-		width: 80rem;
-	}
-
-	.wrapper_text {
-		margin-right: 1rem;
-	}
-}
-
-@media only all and (max-width: 768px) {
-	/* .header {
-		height: 100vh;
-	} */
+@media only all and (max-width: 1024px) {
 	.content_wrapper {
 		flex-direction: column;
 		padding: 6rem 0 6rem 0;
