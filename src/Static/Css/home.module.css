@@ -260,7 +260,7 @@ Section 4 style */
 @media only all and (max-width: 1024px) {
 	.content_wrapper {
 		flex-direction: column;
-		padding: 10rem 0 15rem 0;
+		padding: 10rem 0;
 	}
 
 	.wrapper_text {
@@ -285,10 +285,17 @@ Section 4 style */
 	}
 
 	.image_wrapper {
-		display: none;
+		width: 70%;
+		margin-top: 10rem;
 	}
 
 	.link_wrapper {
 		margin-top: 6rem;
+	}
+}
+
+@media only all and (max-width: 600px) {
+	.content_wrapper {
+		padding: 5rem 0 10rem 0;
 	}
 }
