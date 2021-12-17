@@ -260,7 +260,7 @@ Section 4 style */
 @media only all and (max-width: 1024px) {
 	.content_wrapper {
 		flex-direction: column;
-		padding: 6rem 0 6rem 0;
+		padding: 10rem 0 15rem 0;
 	}
 
 	.wrapper_text {
