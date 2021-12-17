@@ -6,6 +6,7 @@
 	background-size: cover;
 	width: 100%;
 	background-color: rgb(249, 251, 253);
+	height: 100vh;
 }
 
 .content_wrapper {
@@ -284,9 +285,9 @@ Section 4 style */
 }
 
 @media only all and (max-width: 766px) {
-	.header {
-		/* height: 1006px; */
-	}
+	/* .header {
+		height: 100vh;
+	} */
 	.content_wrapper {
 		flex-direction: column;
 		padding: 6rem 0 6rem 0;
