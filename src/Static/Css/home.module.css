@@ -4,7 +4,6 @@
 .header {
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
 	width: 100%;
 	background-color: rgb(249, 251, 253);
 }
@@ -38,9 +37,6 @@
 	margin-top: 2rem;
 }
 
-.image_wrapper {
-	/* width: 50%; */
-}
 .image_wrapper img {
 	width: 100%;
 	height: 100%;
@@ -185,11 +181,15 @@ Section 4 style */
 .testimony_container {
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-between;
+	width: auto;
 }
 
-.testimony_wrapper:not(:last-child) {
-	margin-right: 4rem;
+.section_holiday {
+	width: 100%;
+}
+
+.testimony_wrapper:not(:first-child) {
+	margin-left: 4rem;
 }
 
 .testimony_wrapper {
@@ -197,7 +197,8 @@ Section 4 style */
 	border-radius: 6px;
 	transition: transform 0.6s;
 	box-shadow: -10px 8px 10px rgb(236, 240, 243);
-	padding: 3rem 2rem 5rem 4rem;
+	padding: 3rem 3rem 5rem 4rem;
+	/* width: 32%; */
 }
 
 .testimony_wrapper:hover {
@@ -231,4 +232,92 @@ Section 4 style */
 
 .testifier_wrapper p {
 	font-size: 1.4rem;
+}
+
+/* Media query */
+
+@media only all and (max-width: 1300px) {
+	.content_wrapper {
+		padding: 8rem 0 6rem 0;
+	}
+
+	.wrapper_text {
+		margin-right: 6rem;
+	}
+
+	.wrapper_text h1 {
+		font-size: 4rem;
+	}
+
+	.image_wrapper {
+		width: 70rem;
+	}
+}
+
+@media only all and (max-width: 1080px) {
+	.wrapper_text h1 {
+		font-size: 3.3rem;
+		font-weight: 700;
+	}
+}
+
+@media only all and (max-width: 900px) {
+	.content_wrapper {
+		padding: 6rem 0 6rem 0;
+	}
+
+	.wrapper_text h1 {
+		font-size: 3.2rem;
+	}
+
+	.link_wrapper {
+		margin-top: 4rem;
+	}
+
+	.image_wrapper {
+		width: 80rem;
+	}
+
+	.wrapper_text {
+		margin-right: 1rem;
+	}
+}
+
+@media only all and (max-width: 766px) {
+	.header {
+		height: 1006px;
+	}
+	.content_wrapper {
+		flex-direction: column;
+		padding: 6rem 0 6rem 0;
+	}
+
+	.wrapper_text {
+		width: 90%;
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.wrapper_text h1 {
+		font-size: 4.5rem;
+		text-transform: uppercase;
+	}
+
+	.wrapper_text h1 span:last-child {
+		margin-top: -1.2rem;
+	}
+
+	.wrapper_text p {
+		font-size: 2rem;
+		width: 80%;
+		margin: 3rem auto 0 auto;
+	}
+
+	.image_wrapper {
+		display: none;
+	}
+
+	.link_wrapper {
+		margin-top: 6rem;
+	}
 }

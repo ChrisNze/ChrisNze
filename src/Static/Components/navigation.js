@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import classes from "../Css/navigation.module.css";
 import { Link } from "react-router-dom";
-import { FaChevronUp } from "react-icons/fa";
+import { FaBars, FaChevronUp } from "react-icons/fa";
 
 function Navigation({ scrollTop }) {
 	const btnScrollTop = () => {
@@ -41,6 +41,8 @@ function Navigation({ scrollTop }) {
 						Login
 					</Link>
 				</div>
+
+				<FaBars className={classes.mobile_navigation} />
 			</nav>
 
 			<div className={`${classes.top} bounceanimation`} onClick={btnScrollTop}>

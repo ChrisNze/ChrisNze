@@ -62,3 +62,34 @@
 	font-size: 2.2rem;
 	color: rgb(255, 255, 255);
 }
+
+.mobile_navigation {
+	font-size: 2.5rem;
+	color: rgb(74, 0, 224);
+	display: none;
+}
+/* Media query */
+
+@media only all and (max-width: 1200px) {
+	.navigation {
+		padding: 2rem 2rem 1rem 2rem;
+	}
+
+	.navigation_link,
+	.navigation_link:link,
+	.navigation_link:visited {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media only all and (max-width: 900px) {
+	.mobile_navigation {
+		display: block;
+	}
+
+	.navigation li,
+	.login {
+		display: none;
+	}
+}

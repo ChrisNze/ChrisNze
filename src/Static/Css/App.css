@@ -13,7 +13,13 @@ body {
 	line-height: 1.7;
 	box-sizing: border-box;
 	color: rgb(88, 85, 85);
+	width: 100%;
 }
+
+.App {
+	width: 100%;
+}
+
 .error {
 	color: crimson;
 	font-size: 1.2rem;
@@ -165,5 +171,27 @@ a:hover {
 
 	100% {
 		transform: translateY(0);
+	}
+}
+
+/* Media Querry */
+@media only all and (max-width: 1024px) {
+	.container {
+		width: 80%;
+	}
+}
+
+@media only all and (max-width: 900px) {
+	html {
+		font-size: 58%;
+	}
+
+	.container {
+		width: 90%;
+	}
+}
+@media only all and (max-width: 766px) {
+	.container {
+		width: 100%;
 	}
 }
