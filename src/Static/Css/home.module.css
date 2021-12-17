@@ -5,8 +5,9 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	background-color: rgb(249, 251, 253);
-	height: 100vh;
+	/* background-color: rgb(249, 251, 253); */
+	/* height: 100%; */
+	/* min-height: 100%; */
 }
 
 .content_wrapper {
@@ -55,7 +56,7 @@
  Section 1 style */
 
 .main {
-	background-color: rgb(236, 240, 243);
+	/* background-color: rgb(236, 240, 243); */
 	padding: 8rem 0;
 }
 
@@ -114,7 +115,7 @@ Section 2 style */
 
 .section_advice {
 	padding: 8rem 0;
-	background-color: rgb(249, 251, 253);
+	/* background-color: rgb(249, 251, 253); */
 }
 
 .section_advice .bottom_div {
@@ -176,7 +177,7 @@ Section 4 style */
 
 .section_testimony {
 	padding: 8rem 0 25rem 0;
-	background-color: rgb(249, 251, 253);
+	/* background-color: rgb(249, 251, 253); */
 }
 
 .testimony_container {
@@ -194,7 +195,7 @@ Section 4 style */
 }
 
 .testimony_wrapper {
-	background-color: rgba(236, 240, 243, 0.4);
+	/* background-color: rgba(236, 240, 243, 0.4); */
 	border-radius: 6px;
 	transition: transform 0.6s;
 	box-shadow: -10px 8px 10px rgb(236, 240, 243);
@@ -284,7 +285,7 @@ Section 4 style */
 	}
 }
 
-@media only all and (max-width: 766px) {
+@media only all and (max-width: 768px) {
 	/* .header {
 		height: 100vh;
 	} */
