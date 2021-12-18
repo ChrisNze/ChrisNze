@@ -138,7 +138,7 @@ function Home({ scrollTop }) {
 
 						<div className={`${classes.holiday_details_heading} ${classes.heading1}`}>
 							<h1>Investment Pal</h1>
-							<p>This is the original platform owned and managed by Investment Pal. Get up to 4% of your capital in monthl</p>
+							<p>This is the original platform owned and managed by Investment Pal. Get up to 4% of your capital monthly</p>
 
 							<div className={classes.donate}>
 								<Link to="/notFound" className="link_2" onClick={scrollTop}>

@@ -6,9 +6,6 @@
 	background-size: cover;
 	width: 100%;
 	background-color: rgb(249, 251, 253);
-
-	/* height: 100%; */
-	/* min-height: 100%; */
 }
 
 .content_wrapper {
@@ -19,7 +16,6 @@
 }
 
 .wrapper_text {
-	/* width: 50%; */
 	margin-right: 10rem;
 }
 
@@ -68,15 +64,18 @@
 
 .holiday_details {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .holiday_details_heading {
-	border: 1px solid rgba(185, 131, 255, 0.3);
 	border-radius: 5px;
 	padding: 4rem 2rem;
-	align-self: flex-start;
+	/* background-color: rgba(236, 240, 243, 0.4); */
+	transition: transform 0.6s;
+	box-shadow: -10px 8px 30px rgb(236, 240, 243);
+}
+
+.holiday_details_heading:hover {
+	transform: scale(1.1);
 }
 
 .holiday_details_heading .donate {
@@ -136,7 +135,6 @@ Section 2 style */
 .advice_pic {
 	margin-right: 10rem;
 	width: 50rem;
-	animation: moveContinous 2s infinite;
 }
 
 .advice_pic img {
@@ -196,7 +194,8 @@ Section 4 style */
 }
 
 .testimony_wrapper {
-	background-color: rgba(236, 240, 243, 0.4);
+	/* background-color: rgba(236, 240, 243, 0.4); */
+	background-color: #fff;
 	border-radius: 6px;
 	transition: transform 0.6s;
 	box-shadow: -10px 8px 10px rgb(236, 240, 243);
@@ -258,6 +257,7 @@ Section 4 style */
 }
 
 @media only all and (max-width: 1024px) {
+	/* header */
 	.content_wrapper {
 		flex-direction: column;
 		padding: 10rem 0;
@@ -270,32 +270,319 @@ Section 4 style */
 	}
 
 	.wrapper_text h1 {
-		font-size: 4.5rem;
+		font-size: 5rem;
 		text-transform: uppercase;
 	}
 
 	.wrapper_text h1 span:last-child {
-		margin-top: -1.2rem;
+		margin-top: 0;
 	}
 
 	.wrapper_text p {
-		font-size: 2rem;
+		font-size: 3rem;
 		width: 80%;
 		margin: 3rem auto 0 auto;
 	}
 
 	.image_wrapper {
-		width: 90%;
+		width: 70%;
 		margin-top: 10rem;
 	}
 
 	.link_wrapper {
 		margin-top: 6rem;
 	}
+
+	/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ Section 1 style */
+
+	.section_holiday {
+		width: 80%;
+		margin: 0 auto 6rem auto;
+	}
+
+	.holiday_details {
+		flex-direction: column;
+	}
+
+	.holiday_details_heading {
+		border-radius: 20px;
+		width: 70%;
+		margin: 0 auto;
+		padding-top: 6rem;
+		height: 60rem;
+	}
+
+	.holiday_details_heading:not(:last-child) {
+		margin: 0 auto 4rem auto;
+	}
+
+	.holiday_details_heading .heading {
+		flex-direction: column;
+		margin-bottom: 3rem;
+	}
+
+	.holiday_details_heading .heading h1 {
+		margin-left: 0;
+		font-size: 4rem;
+	}
+	.holiday_details_heading p {
+		font-size: 3.2rem;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+	}
+
+	.icon {
+		font-size: 10rem;
+		margin-bottom: 2rem;
+	}
+
+	/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Section 2 style */
+
+	.section_advice {
+		padding: 3rem 0;
+	}
+
+	.advice_container {
+		margin-top: 5rem;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.advice_pic {
+		margin-right: 0;
+		margin-top: 10rem;
+		width: 70%;
+	}
+
+	.advice_wrapper {
+		width: 70%;
+	}
+
+	.advice_wrapper h2 {
+		font-weight: 500;
+		text-align: center;
+	}
+
+	.advice_wrapper p {
+		margin-bottom: 8rem;
+		font-size: 3rem;
+	}
+
+	.advice_text {
+		margin-top: 3rem;
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Section 3 style */
+
+	.heading1 h1 {
+		font-size: 5rem;
+	}
+
+	.heading1 p {
+		margin-bottom: 10rem;
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Section 4 style */
+	.section_testimony {
+		padding: 8rem 0 25rem 0;
+		background-color: #fff;
+	}
+
+	.testimony_container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.section_holiday {
+		width: 100%;
+	}
+
+	.testimony_wrapper:not(:first-child) {
+		margin: 10rem 0 0 0;
+	}
+
+	.testimony_wrapper {
+		border-radius: 20px;
+		padding: 5rem 3rem 10rem 7rem;
+		/* height: 50rem; */
+		width: 70%;
+	}
+
+	.testimony_wrapper .icons {
+		font-size: 3rem;
+	}
+
+	.testimony_wrapper p {
+		font-size: 3.2rem;
+	}
+
+	.testifier_wrapper img {
+		margin-right: 3rem;
+		width: 13rem;
+	}
+
+	.testifier_wrapper h2 {
+		font-size: 3.5rem;
+	}
+
+	.testifier_wrapper p {
+		font-size: 3rem;
+	}
 }
 
 @media only all and (max-width: 600px) {
 	.content_wrapper {
 		padding: 5rem 0 10rem 0;
+	}
+
+	.wrapper_text {
+		width: 100%;
+	}
+
+	.wrapper_text h1 {
+		font-size: 2.5rem;
+	}
+
+	.wrapper_text p {
+		width: 85%;
+		font-size: 2.5rem;
+		margin-top: 3rem;
+	}
+
+	.wrapper_text h1 span:last-child {
+		margin-top: 1rem;
+	}
+
+	.image_wrapper {
+		width: 90%;
+		margin-top: 7rem;
+	}
+
+	/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ Section 1 style */
+
+	.main {
+		padding: 6rem 0 4rem 0;
+	}
+
+	.section_holiday {
+		width: 100%;
+	}
+
+	.holiday_details_heading {
+		width: 90%;
+		height: auto;
+		padding: 4rem 0;
+	}
+
+	.holiday_details_heading:not(:last-child) {
+		margin: 0 auto 7rem auto;
+	}
+
+	.holiday_details_heading .heading {
+		margin-bottom: 2rem;
+	}
+
+	.holiday_details_heading .heading h1 {
+		font-size: 3rem;
+	}
+	.holiday_details_heading p {
+		font-size: 2.5rem;
+		width: 100%;
+	}
+
+	.icon {
+		font-size: 7rem;
+		margin-bottom: 2rem;
+	}
+	/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Section 2 style */
+
+	.section_advice {
+		padding: 3rem 0;
+	}
+
+	.advice_container {
+		margin-top: 3rem;
+	}
+
+	.advice_pic {
+		margin: 10rem auto 0 auto;
+		width: 90%;
+	}
+
+	.advice_wrapper {
+		width: 90%;
+	}
+
+	.advice_wrapper h2 {
+		font-weight: 200;
+	}
+
+	.advice_wrapper p {
+		margin-bottom: 6rem;
+		font-size: 2.5rem;
+	}
+
+	.advice_text {
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Section 3 style */
+
+	.heading1 h1 {
+		font-size: 4rem;
+	}
+
+	.heading1 p {
+		margin-bottom: 8rem;
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Section 4 style */
+	.section_testimony {
+		padding: 6rem 0 20rem 0;
+	}
+
+	.testimony_container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.testimony_wrapper:not(:first-child) {
+		margin: 4rem 0 0 0;
+	}
+
+	.testimony_wrapper {
+		padding: 3rem 0 8rem 2rem;
+
+		width: 90%;
+	}
+
+	.testimony_wrapper .icons {
+		font-size: 2.5rem;
+	}
+
+	.testimony_wrapper p {
+		font-size: 2.5rem;
+	}
+
+	.testifier_wrapper img {
+		margin-right: 3rem;
+		width: 9rem;
+	}
+
+	.testifier_wrapper h2 {
+		font-size: 2.5rem;
+	}
+
+	.testifier_wrapper p {
+		font-size: 2rem;
 	}
 }

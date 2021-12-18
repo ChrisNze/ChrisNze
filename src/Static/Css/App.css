@@ -43,7 +43,7 @@ a:visited {
 	font-size: 1.3rem;
 	text-decoration: none;
 	background-image: linear-gradient(to right, rgb(74, 0, 224), rgb(166, 102, 250));
-	padding: 12px 32px;
+	padding: 1.2rem 3.2rem;
 	text-transform: uppercase;
 	border-radius: 100px;
 	color: rgb(88, 85, 85);
@@ -60,6 +60,7 @@ a:hover {
 .link_2:link,
 .link_2:visited {
 	color: rgb(255, 255, 255);
+	text-align: center;
 }
 
 .link_2:hover {
@@ -172,24 +173,55 @@ a:hover {
 	}
 }
 
-/* Media Querry */
+/* Media Query */
 @media only all and (max-width: 1024px) {
 	.container {
-		width: 80%;
-	}
-}
-
-@media only all and (max-width: 900px) {
-	html {
-		font-size: 58%;
-	}
-
-	.container {
-		width: 90%;
-	}
-}
-@media only all and (max-width: 768px) {
-	.container {
 		width: 100%;
+	}
+
+	.heading_secondary {
+		font-size: 3.7rem;
+		width: 70%;
+	}
+
+	.heading_primary {
+		font-size: 6rem;
+	}
+
+	.heading_tertiary {
+		font-size: 3.8rem;
+	}
+
+	a,
+	a:link,
+	a:visited {
+		font-size: 2.2rem;
+		padding: 1.2rem 4.5rem;
+	}
+
+	.clip_path {
+		clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+	}
+}
+
+@media only all and (max-width: 600px) {
+	.heading_secondary {
+		font-size: 2.5rem;
+	}
+
+	.heading_primary {
+		font-size: 3.9rem;
+		margin-bottom: 0.8rem;
+	}
+
+	.heading_tertiary {
+		font-size: 3.2rem;
+	}
+
+	a,
+	a:link,
+	a:visited {
+		font-size: 1.5rem;
+		padding: 1.2rem 3.5rem;
 	}
 }
