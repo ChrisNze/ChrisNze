@@ -117,7 +117,8 @@ a:hover {
 	font-weight: 600;
 	text-transform: capitalize;
 	margin-bottom: 1rem;
-	color: rgb(19, 19, 51);
+	/* color: rgb(19, 19, 51); */
+	color: rgb(74, 0, 224);
 }
 
 .heading_tertiary {
@@ -205,23 +206,31 @@ a:hover {
 }
 
 @media only all and (max-width: 600px) {
+	html {
+		font-size: 40%;
+	}
 	.heading_secondary {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 
 	.heading_primary {
-		font-size: 3.9rem;
+		font-size: 3rem;
 		margin-bottom: 0.8rem;
 	}
 
 	.heading_tertiary {
-		font-size: 3.2rem;
+		font-size: 2.3rem;
 	}
 
 	a,
 	a:link,
 	a:visited {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		padding: 1.2rem 3.5rem;
+	}
+
+	.bottom {
+		width: 10rem;
+		height: 2px;
 	}
 }
