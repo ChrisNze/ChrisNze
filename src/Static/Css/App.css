@@ -117,7 +117,6 @@ a:hover {
 	font-weight: 600;
 	text-transform: capitalize;
 	margin-bottom: 1rem;
-	/* color: rgb(19, 19, 51); */
 	color: rgb(74, 0, 224);
 }
 
@@ -176,6 +175,9 @@ a:hover {
 
 /* Media Query */
 @media only all and (max-width: 1024px) {
+	html {
+		font-size: 56%;
+	}
 	.container {
 		width: 100%;
 	}
@@ -210,27 +212,30 @@ a:hover {
 		font-size: 40%;
 	}
 	.heading_secondary {
-		font-size: 2rem;
+		font-size: 2.3rem;
 	}
 
 	.heading_primary {
-		font-size: 3rem;
+		font-size: 4.2rem;
 		margin-bottom: 0.8rem;
 	}
 
 	.heading_tertiary {
-		font-size: 2.3rem;
-	}
-
-	a,
-	a:link,
-	a:visited {
-		font-size: 1.2rem;
-		padding: 1.2rem 3.5rem;
+		font-size: 2.5rem;
 	}
 
 	.bottom {
 		width: 10rem;
 		height: 2px;
+	}
+}
+
+@media only all and (max-width: 425px) {
+	a,
+	a:link,
+	a:visited {
+		font-size: 1.8rem;
+		padding: 1.2rem 3.5rem;
+		width: 80%;
 	}
 }

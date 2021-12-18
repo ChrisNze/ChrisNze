@@ -69,7 +69,7 @@
 	border-radius: 5px;
 	padding: 4rem 2rem;
 	transition: transform 0.6s;
-	box-shadow: -6px 2px 20px rgba(166, 102, 250, 0.5);
+	box-shadow: -6px 2px 20px rgba(166, 102, 250, 0.2);
 }
 
 .holiday_details_heading:hover {
@@ -194,7 +194,7 @@ Section 4 style */
 	background-color: #fff;
 	border-radius: 6px;
 	transition: transform 0.6s;
-	box-shadow: -6px 2px 20px rgba(166, 102, 250, 0.5);
+	box-shadow: -6px 2px 20px rgba(166, 102, 250, 0.2);
 	padding: 3rem 3rem 5rem 4rem;
 }
 
@@ -301,7 +301,7 @@ Section 4 style */
 	}
 
 	.holiday_details_heading {
-		border-radius: 20px;
+		border-radius: 10px;
 		width: 70%;
 		margin: 0 auto;
 		padding-top: 6rem;
@@ -401,9 +401,8 @@ Section 4 style */
 	}
 
 	.testimony_wrapper {
-		border-radius: 20px;
+		border-radius: 10px;
 		padding: 5rem 3rem 10rem 7rem;
-		/* height: 50rem; */
 		width: 70%;
 	}
 
@@ -431,7 +430,7 @@ Section 4 style */
 
 @media only all and (max-width: 600px) {
 	.content_wrapper {
-		padding: 5rem 0 10rem 0;
+		padding: 15rem 1rem 10rem 2rem;
 	}
 
 	.wrapper_text {
@@ -439,12 +438,13 @@ Section 4 style */
 	}
 
 	.wrapper_text h1 {
-		font-size: 2.8rem;
+		font-size: 3.5rem;
 	}
 
 	.wrapper_text p {
-		width: 85%;
+		width: 100%;
 		font-size: 2rem;
+		text-align: left;
 		margin-top: 3rem;
 	}
 
@@ -453,8 +453,17 @@ Section 4 style */
 	}
 
 	.image_wrapper {
-		width: 70%;
+		width: 90%;
 		margin-top: 7rem;
+	}
+
+	.link_wrapper {
+		margin-top: 6rem;
+		text-align: left;
+	}
+
+	.link_wrapper a:last-child {
+		margin-left: 2rem;
 	}
 
 	/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -470,12 +479,12 @@ Section 4 style */
 
 	.holiday_details_heading {
 		width: 90%;
-		height: auto;
-		padding: 4rem 0;
+		height: 40rem;
+		padding: 4rem 0 0 0;
 	}
 
 	.holiday_details_heading:not(:last-child) {
-		margin: 0 auto 7rem auto;
+		margin: 0 auto 5rem auto;
 	}
 
 	.holiday_details_heading .heading {
@@ -483,15 +492,15 @@ Section 4 style */
 	}
 
 	.holiday_details_heading .heading h1 {
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
 	.holiday_details_heading p {
-		font-size: 1.8rem;
-		width: 80%;
+		font-size: 2rem;
+		width: 90%;
 	}
 
 	.icon {
-		font-size: 5rem;
+		font-size: 7rem;
 		margin-bottom: 2rem;
 	}
 	/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -507,7 +516,7 @@ Section 2 style */
 
 	.advice_pic {
 		margin: 10rem auto 0 auto;
-		width: 70%;
+		width: 80%;
 	}
 
 	.advice_wrapper {
@@ -515,12 +524,12 @@ Section 2 style */
 	}
 
 	.advice_wrapper h2 {
-		font-weight: 200;
+		font-weight: 700;
 	}
 
 	.advice_wrapper p {
 		margin-bottom: 6rem;
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 
 	.advice_text {
@@ -532,7 +541,7 @@ Section 2 style */
 Section 3 style */
 
 	.heading1 h1 {
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 
 	.heading1 p {
@@ -550,8 +559,12 @@ Section 4 style */
 		align-items: center;
 	}
 
+	.testimony_wrapper {
+		height: 40rem;
+	}
+
 	.testimony_wrapper:not(:first-child) {
-		margin: 8rem 0 0 0;
+		margin: 5rem 0 0 0;
 	}
 
 	.testimony_wrapper {
@@ -578,5 +591,14 @@ Section 4 style */
 
 	.testifier_wrapper p {
 		font-size: 1.6rem;
+	}
+}
+
+@media only all and (max-width: 425px) {
+	.link_wrapper {
+		display: flex;
+		justify-content: center;
+		width: 80%;
+		margin: 6rem auto 0 auto;
 	}
 }

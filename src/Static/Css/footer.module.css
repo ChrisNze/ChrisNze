@@ -144,6 +144,18 @@
 
 /* Media query */
 
+@media only all and (max-width: 1024px) {
+	.footer_content_wrapper {
+		width: 90%;
+		margin: auto;
+	}
+
+	.footer_heading_wrapper h2 {
+		width: 80%;
+		font-size: 2.8rem;
+	}
+}
+
 @media only all and (max-width: 900px) {
 	.footer {
 		padding: 25rem 0 0 0;
@@ -166,6 +178,7 @@
 
 	.form_wrapper h1 {
 		font-size: 4rem;
+		text-align: center;
 	}
 
 	.input_wrapper input {
