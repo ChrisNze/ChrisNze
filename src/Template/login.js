@@ -58,7 +58,7 @@ function Login({ scrollTop }) {
 								<Link to="/forgot Password">Forgot Password?</Link>
 							</div>
 
-							<div className={classes.signin_wrapper}>
+							<div className={`${classes.signin_wrapper} ${classes.signin_wrapper_1}`}>
 								<button type="submit" className={classes.signin}>
 									Sign in
 								</button>

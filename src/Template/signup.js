@@ -91,7 +91,6 @@ function Signup({ scrollTop }) {
 							<div className={classes.form_div_wrapper}>
 								<div className={classes.input_wrapper}>
 									<FaUser className={classes.icon} />
-
 									<div className={classes.input}>
 										<input type="text" required value={value.firstName} onChange={getValue("firstName")} placeholder="Firstname" name="firstName" className={classes.input} />
 										<label className="label">Firstname</label>

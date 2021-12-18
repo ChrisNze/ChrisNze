@@ -21,7 +21,7 @@
 
 .wrapper_text h1 {
 	font-size: 4.5rem;
-	color: rgb(74, 0, 224);
+	color: rgb(19, 19, 51);
 	font-family: "Poppins", sans-serif;
 }
 
@@ -438,7 +438,7 @@ Section 4 style */
 	}
 
 	.wrapper_text h1 {
-		font-size: 3.5rem;
+		font-size: 4rem;
 	}
 
 	.wrapper_text p {

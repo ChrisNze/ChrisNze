@@ -131,7 +131,6 @@
 .signup a:link,
 .forgot_password a:visited,
 .signup a:visited {
-	display: inline-block;
 	text-transform: capitalize;
 	font-size: 1.6rem;
 	text-decoration: none;
@@ -166,7 +165,6 @@
 .signin_wrapper .signin:visited {
 	text-transform: capitalize;
 	border: none;
-	/* width: 100%; change to 100% on mobile */
 	font-size: 1.6rem;
 	text-decoration: none;
 	background-image: linear-gradient(to right, rgb(74, 0, 224), rgb(166, 102, 250));
@@ -187,10 +185,180 @@
 }
 
 .signup {
-	display: flex;
 	margin-top: 1.5rem;
 }
 
 .signup p {
 	margin-right: 1rem;
+	display: inline;
+}
+
+@media only all and (max-width: 1024px) {
+	.login_wrapper {
+		padding: 10rem 0 20rem 0;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.login_pic {
+		display: none;
+	}
+
+	.form_div {
+		width: 60%;
+	}
+
+	.login_container {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.form_div h1 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.form_div_wrapper {
+		display: flex;
+	}
+
+	.input_wrapper {
+		margin-top: 4rem;
+	}
+
+	.form_div_wrapper .input_wrapper_2 {
+		width: 100%;
+	}
+
+	.input_wrapper .icon {
+		font-size: 1.8rem;
+		transform: translate(2.9rem, 2rem);
+	}
+
+	.input_wrapper .input {
+		flex-grow: 1;
+	}
+
+	.input_wrapper input {
+		border-radius: px;
+		font-size: 2rem;
+		letter-spacing: 1.1px;
+		padding: 2rem 4rem;
+	}
+
+	.input_wrapper label {
+		font-size: 2rem;
+		margin-left: 4rem;
+	}
+
+	.input_wrapper input::-webkit-input-placeholder {
+		font-size: 2rem;
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Sign Up style */
+
+	.form_div_2 {
+		width: 80%;
+	}
+	.form_div_2 h1 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.forgot_password a,
+	.signup a,
+	.forgot_password a:link,
+	.signup a:link,
+	.forgot_password a:visited,
+	.signup a:visited {
+		font-size: 2rem;
+	}
+
+	.login_pic_2 {
+		display: none;
+	}
+
+	.signin_wrapper {
+		margin-top: 3rem;
+	}
+
+	.signin_wrapper .signin,
+	.signin_wrapper .signin:link,
+	.signin_wrapper .signin:visited {
+		font-size: 2rem;
+		text-decoration: none;
+		padding: 12px 38px;
+	}
+
+	.signup {
+		margin-top: 3rem;
+	}
+
+	.signup p {
+		font-size: 2rem;
+	}
+}
+
+@media only all and (max-width: 600px) {
+	.form_div {
+		width: 90%;
+	}
+
+	.input_wrapper input {
+		border-radius: 6px;
+	}
+
+	.signin_wrapper_1 button {
+		width: 100%;
+	}
+
+	.input_wrapper input::-webkit-input-placeholder {
+		font-size: 1.8rem;
+	}
+
+	/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Sign Up style */
+
+	.form_div_2 {
+		width: 100%;
+	}
+	.form_div_2 h1 {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+
+	.forgot_password a,
+	.signup a,
+	.forgot_password a:link,
+	.signup a:link,
+	.forgot_password a:visited,
+	.signup a:visited {
+		font-size: 2rem;
+	}
+
+	.login_pic_2 {
+		display: none;
+	}
+
+	.signin_wrapper {
+		margin-top: 3rem;
+	}
+
+	.signin_wrapper .signin,
+	.signin_wrapper .signin:link,
+	.signin_wrapper .signin:visited {
+		font-size: 2rem;
+		text-decoration: none;
+		padding: 12px 38px;
+	}
+
+	.signup {
+		margin-top: 4rem;
+	}
+
+	.signup p {
+		margin-right: 0;
+	}
 }
